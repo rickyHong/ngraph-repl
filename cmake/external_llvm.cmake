@@ -29,10 +29,8 @@ endif()
 ExternalProject_Add(
     ext_clang
     PREFIX clang
-    #URL http://releases.llvm.org/${NGRAPH_LLVM_VERSION}/cfe-${NGRAPH_LLVM_VERSION}.src.tar.xz
-    #URL_HASH SHA1=427e12762836d808583fb4149c033d02de0a8db2
-    URL http://prereleases.llvm.org/8.0.0/rc5/cfe-8.0.0rc5.src.tar.xz
-    URL_HASH SHA1=b2e37038d64f097f396c7fe5181349c337da9551
+    URL http://releases.llvm.org/${NGRAPH_LLVM_VERSION}/cfe-${NGRAPH_LLVM_VERSION}.src.tar.xz
+    URL_HASH SHA1=
     DOWNLOAD_NO_PROGRESS TRUE
     CONFIGURE_COMMAND ""
     BUILD_COMMAND ""
@@ -47,10 +45,8 @@ set(CLANG_SOURCE_DIR ${SOURCE_DIR})
 ExternalProject_Add(
     ext_openmp
     PREFIX openmp
-    #URL http://releases.llvm.org/${NGRAPH_LLVM_VERSION}/openmp-${NGRAPH_LLVM_VERSION}.src.tar.xz
-    #URL_HASH SHA1=3b931dcafbe6e621c9d99617235fd63f222c2ba2
-    URL http://prereleases.llvm.org/8.0.0/rc5/openmp-8.0.0rc5.src.tar.xz
-    URL_HASH SHA1=006e8734f642d831ce591eab3aa8d20c18e24962
+    URL http://releases.llvm.org/${NGRAPH_LLVM_VERSION}/openmp-${NGRAPH_LLVM_VERSION}.src.tar.xz
+    URL_HASH SHA1=
     DOWNLOAD_NO_PROGRESS TRUE
     PATCH_COMMAND git apply ${CMAKE_SOURCE_DIR}/cmake/omprt.patch
     CONFIGURE_COMMAND ""
@@ -98,10 +94,8 @@ ExternalProject_Add(
     ext_llvm
     PREFIX llvm
     DEPENDS ${LLVM_DEPENDS}
-    #URL http://releases.llvm.org/${NGRAPH_LLVM_VERSION}/llvm-${NGRAPH_LLVM_VERSION}.src.tar.xz
-    #URL_HASH SHA1=f97632fcc3186eb0d396492ef8acfc807648580f
-    URL http://prereleases.llvm.org/8.0.0/rc5/llvm-8.0.0rc5.src.tar.xz
-    URL_HASH SHA1=37c0c3b5596fb05a64e75dbc0eafaf738dadc8ca
+    URL http://releases.llvm.org/${NGRAPH_LLVM_VERSION}/llvm-${NGRAPH_LLVM_VERSION}.src.tar.xz
+    URL_HASH SHA1=
     DOWNLOAD_NO_PROGRESS TRUE
     CMAKE_GENERATOR ${CMAKE_GENERATOR}
     CMAKE_GENERATOR_PLATFORM ${CMAKE_GENERATOR_PLATFORM}
