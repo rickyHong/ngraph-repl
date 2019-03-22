@@ -6,7 +6,7 @@ Linux system with Git and Docker installed.
 
 ## Supported Python versions
 
-Python 2.7, 3.4, 3.5, 3.6, 3.7
+Python 2.7, 3.3, 3.4, 3.5, 3.6
 
 ## Build instructions
 
@@ -22,8 +22,8 @@ After this procedure completes, the `python/dist` directory should contain Pytho
 
     $ ls python/dist
     ngraph_core-0.16.0-cp27-cp27m-manylinux2010.whl
+    ngraph_core-0.16.0-cp33-cp33m-manylinux2010.whl
+    ngraph_core-0.16.0-cp35-cp35m-manylinux2010.whl
+    ngraph_core-0.16.0-cp27-cp27mu-manylinux2010.whl
     ngraph_core-0.16.0-cp34-cp34m-manylinux2010.whl
     ngraph_core-0.16.0-cp36-cp36m-manylinux2010.whl
-    ngraph_core-0.16.0-cp27-cp27mu-manylinux2010.whl
-    ngraph_core-0.16.0-cp35-cp35m-manylinux2010.whl
-    ngraph_core-0.16.0-cp37-cp37m-manylinux2010.whl
